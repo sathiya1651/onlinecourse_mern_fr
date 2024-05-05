@@ -1,0 +1,19 @@
+.this{
+    background-color: white;
+}
+
+.lsa{
+    border: 2px solid darkmagenta;
+    border-left: 20px solid darkmagenta;
+    border-right: 20px solid darkmagenta;
+    border-radius: 10px ;
+}
+
+.rop{
+    text-align: center;
+}
+.cap{
+    gap: 30px;
+}
+
+

@@ -1,0 +1,17 @@
+.one{
+    border: 2px solid  darkcyan;
+    border-radius: 20px 20px;
+padding: 13px;
+font-size: 15px;
+font-family: sans-serif;
+}
+
+.one:hover{
+    background-color: chartreuse;
+    color: black;
+}
+
+.way1{
+    background-color:antiquewhite;
+}
+

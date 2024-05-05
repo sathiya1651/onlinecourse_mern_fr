@@ -1,0 +1,36 @@
+span{
+    background-color: lawngreen;
+}
+.card {
+    width: 18rem;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding initial box shadow */
+    transition: box-shadow 0.3s ease; /* Adding transition for smoother effect */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Changing box shadow on hover */
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.open {
+    font-weight: bold;
+    color: green;
+}
+
+/* Define your star icon styling if needed */
+.checked {
+    color: orange;
+}

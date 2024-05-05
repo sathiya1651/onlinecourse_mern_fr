@@ -1,0 +1,19 @@
+.pop{
+    border: 3px solid black;
+    margin: 3px;
+    padding: 10px;
+}
+
+.many img{
+    border-radius: 25px 25px;
+    padding: 10px;
+}
+
+.many{
+    display: flex;
+    justify-content: space-between;
+}
+
+.many img:hover{
+    transform: scale(0.9); 
+}
