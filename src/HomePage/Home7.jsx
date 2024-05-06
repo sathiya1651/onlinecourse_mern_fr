@@ -7,7 +7,7 @@ import five from '../Images1/five.png'
 import six from '../Images1/six.png'
 import seven from '../Images1/seven.jpg'
 
-
+import Home9 from './Home9'
 
 const Home7 = () => {
   return (
@@ -46,6 +46,8 @@ const Home7 = () => {
     </div>
    </div>
    
+<Home9/>
+
    </>
   )
 }

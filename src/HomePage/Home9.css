@@ -1,0 +1,15 @@
+.fr{
+    height: 100%;
+    width: 100%;
+    /* box-shadow: 0 0 10px #3d3d3d; */
+    filter: drop-shadow(0 0 6px gray);
+    border-radius: 20px 20px;
+
+}
+
+.pop{
+      
+    border: 2px solid black;
+    border-right: 30px solid darkcyan;
+    
+}

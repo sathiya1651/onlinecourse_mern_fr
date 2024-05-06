@@ -6,6 +6,11 @@ import one from '../Images1/one.png'
 import Home7 from './Home7';
 
 const Home6 = () => {
+
+const op = ()=>{
+  alert("Gain visibility into how your employees are learning")
+}
+
   return (
     <>
     <div className="container-fluid">
@@ -14,7 +19,7 @@ const Home6 = () => {
             <div className='m-5'>
                 <h2 className=' fw-bold p-2  '>Top trends for the future of work</h2>
                 <p className='p-2'>GenAI and leadership are at the core of today's skills-based economy. Get the 2024 Global Learning & Skills Trends Report to learn more.</p>
-                <Button variant='outline-dark po'>Get the report  <FaArrowRight />
+                <Button variant='outline-dark po' onClick={()=>op()}>Get More  <FaArrowRight />
  </Button>
             </div>
             </div>
