@@ -4,12 +4,12 @@ span{
 .card {
     width: 18rem;
     height: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding initial box shadow */
-    transition: box-shadow 0.3s ease; /* Adding transition for smoother effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Changing box shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .card-body {

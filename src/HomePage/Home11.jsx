@@ -31,7 +31,7 @@ const Home11 = () => {
       </div>
     </div>
     
-<div className="container-fluid p-5">
+<div className="container-fluid p-3">
   <div className="row">
 
 
