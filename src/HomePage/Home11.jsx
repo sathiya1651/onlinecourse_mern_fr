@@ -4,6 +4,7 @@ import { FaUser } from "react-icons/fa6";
 import Button from 'react-bootstrap/Button';
 import { FaArrowRight } from "react-icons/fa";
 import { RiVerifiedBadgeLine } from "react-icons/ri";
+import Home12 from './Home12';
 
 
 
@@ -177,7 +178,7 @@ const Home11 = () => {
   </div>
 </div>
 
-
+<Home12/>
 
     </>
   )

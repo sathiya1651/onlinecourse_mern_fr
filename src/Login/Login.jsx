@@ -26,7 +26,7 @@ const Login = () => {
       console.log(Form)
       e.preventDefault();
       
-      axios.post('http://localhost:4000/api/login', Form)
+      axios.post('http://localhost:4000/login', Form)
           .then(res => {
             if(res.data){
             alert("Login Successful")

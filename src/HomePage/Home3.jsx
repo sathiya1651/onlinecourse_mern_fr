@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home3.css'
 import Home4 from './Home4'
+import { Link } from 'react-router-dom';
 
 const Home3 = () => {
   return (
@@ -9,13 +10,13 @@ const Home3 = () => {
     <div className="container-fluid p-5 way">
         <div className="row m-3">
             <div className="col-lg-4 col-md-4 col-sm-12">
-            <button className='btn btn-outline-dark one'>Web Development</button>
+        <Link to='/Web Development'><button className='btn btn-outline-dark one'>Web Development</button></Link>    
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
-            <button className='btn btn-outline-dark one'>Database Design</button>
+          <Link to='/Data Design'><button className='btn btn-outline-dark one'>Database Design</button></Link>  
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12">
-            <button className='btn btn-outline-dark one'>Mobile Development</button>
+          <Link to='/Mobile App Development'><button className='btn btn-outline-dark one'>Mobile Development</button></Link>  
             </div>
 
 

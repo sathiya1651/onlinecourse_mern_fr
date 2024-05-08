@@ -28,7 +28,7 @@ const handleSubmit = (e) => {
 
   e.preventDefault();
   
-  axios.post("http://localhost:4000/api/signup", Form)
+  axios.post("http://localhost:4000/signup", Form)
     .then(res => {
         console.log("Response:", res.data); // Log the response for debugging
         if (res.data) {

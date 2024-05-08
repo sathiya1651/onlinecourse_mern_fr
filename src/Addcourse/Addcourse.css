@@ -1,0 +1,28 @@
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .iop{
+    margin-left: 100px;
+  }
+
+  .pics{
+    background-image: url('https://nestjs.com/img/logo-small.svg');
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    width: 100%;
+    height: 100%;
+}
+  

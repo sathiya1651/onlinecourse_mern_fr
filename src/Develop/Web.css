@@ -1,0 +1,39 @@
+.kop{
+    background-color:whitesmoke;
+    border-radius: 10px 10px;
+  
+    
+}
+
+.io{
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.Card{
+    width: 100%;
+    height: 100%;
+}
+
+.plss{
+    border: 2px solid darkgray;
+    padding: 30px;
+    margin: 30px;
+    background-color:aliceblue;
+
+}
+
+.php{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px;
+}
+.nom{
+    background-color: aliceblue;
+}
+.lit2{
+    background-color:springgreen;
+}
+.er{
+    background-color: white;
+}
