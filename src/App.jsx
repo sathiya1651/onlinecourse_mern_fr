@@ -14,6 +14,9 @@ import Mobile from './Develop/Mobile';
 import Human from './Business/Human';
 import Project from './Business/Project';
 import Business from './Business/Business';
+import Del1 from './Delete/Del1';
+import Update1 from './Update/Update1';
+
 
 const App = () => {
   return (
@@ -35,6 +38,11 @@ const App = () => {
 <Route path='/Human Resources' element={<Human/>}/>
 <Route path='/Project Management' element={<Project/>}/>
 <Route path='/Business Stragery' element={<Business/>}/>
+
+<Route path='/delete' element={<Del1/>}/>
+<Route path='/update' element={<Update1/>}/>
+
+
     </Routes>
     </BrowserRouter>
     </>

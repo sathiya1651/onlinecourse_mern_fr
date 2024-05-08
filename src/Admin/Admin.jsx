@@ -1,6 +1,9 @@
 import React, { useState,useEffect } from 'react';
 import axios from 'axios'
 import Admin1 from './Admin1';
+import {Link} from 'react-router-dom'
+import { MdDelete } from "react-icons/md";
+import { CiEdit } from "react-icons/ci";
 
 const Admin = () => {
 
@@ -20,7 +23,7 @@ const Admin = () => {
         fetchData();
       }, []);   
 
-
+    
 
 
   return (
@@ -34,6 +37,8 @@ const Admin = () => {
                     <th>Name</th>
                     <th>Username</th>
                     <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
                    
                 </tr>
             </thead>
@@ -45,6 +50,10 @@ const Admin = () => {
                         <td>{item.name}</td>
                         <td>{item.username}</td>
                         <td>{item.password}</td>
+                        <td><Link to="/update"><button><CiEdit />
+</button></Link></td>
+                        <td><Link to='/delete'><button><MdDelete />
+</button></Link></td>
                     </tr>
                 ))}
             </tbody>
