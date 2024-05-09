@@ -5,12 +5,14 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 
 
-const Update1 = () => {
+const Update2 = () => {
+
     const [formData, setFormData] = useState({
         id: '',
-        name: '',
-        username: '',
-        password: ''
+        coursename: '',
+        coursedescription: '',
+        courseprice: '',
+        image:null
     });
 
     const navigate = useNavigate();
@@ -18,9 +20,9 @@ const Update1 = () => {
     const handleChange = (e) =>{
         setFormData(prev=>({...prev,[e.target.name]:e.target.value}))
     }
-    const update = () => {
+    const update = (_id) => {
         console.log(formData);
-        axios.patch(`http://localhost:4000/update/${formData.id}`, formData)
+        axios.patch(`http://localhost:4000/updatecourse/${formData.id}`,formData)
             .then(response => {
                 console.log(response);
                 navigate('/admin');
@@ -29,37 +31,39 @@ const Update1 = () => {
                 console.log(error);
             });
     };
-    
-
-
-
 
   return (
-    <>
-            <div className="modal show" style={{ display: 'block', position: 'initial' }}>
+   <>
+   <div className="modal show" style={{ display: 'block', position: 'initial' }}>
                 <Modal.Dialog>
                     <Modal.Header closeButton>
-                        <Modal.Title>Update </Modal.Title>
+                        <Modal.Title>Update course </Modal.Title>
                     </Modal.Header>
                     <Modal.Body className='text-center'>
-                        <input type="text" name="id" placeholder='Id' value={formData.id} onChange={handleChange} />
+                        <input type="number" name="id" placeholder='Id' value={formData.id} onChange={handleChange} />
                     </Modal.Body>
                     <Modal.Body className='text-center'>
-                        <input type="text" name="name" placeholder='name' value={formData.name} onChange={handleChange} />
+                        <input type="text" name="coursename" placeholder='coursename' value={formData.coursename} onChange={handleChange} />
                     </Modal.Body>
                     <Modal.Body className='text-center'>
-                        <input type="text" name="username" placeholder='username' value={formData.username} onChange={handleChange} />
+                        <input type="text" name="coursedescription" placeholder='coursedescription' value={formData.coursedescription} onChange={handleChange} />
                     </Modal.Body>
                     <Modal.Body className='text-center'>
-                        <input type="password" name="password" placeholder='password' value={formData.password} onChange={handleChange} />
+                        <input type="text" name="courseprice" placeholder='courseprice' value={formData.courseprice} onChange={handleChange} />
                     </Modal.Body>
+                     <Modal.Body>
+                     <input type="file" class="form-control-file" name="image" onChange={handleChange} />
+
+                     </Modal.Body>
+
                     <Modal.Footer>
                         <Button variant="secondary" onClick={update}>Update</Button>
                     </Modal.Footer>
                 </Modal.Dialog>
             </div>
-        </>
+   
+   </>
   )
 }
 
-export default Update1
+export default Update2

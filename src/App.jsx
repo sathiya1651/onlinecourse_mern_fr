@@ -16,6 +16,10 @@ import Project from './Business/Project';
 import Business from './Business/Business';
 import Del1 from './Delete/Del1';
 import Update1 from './Update/Update1';
+import Del2 from './Delete/Del2';
+import Update2 from './Update/Update2';
+import Cart from './Cart/Cart';
+
 
 
 const App = () => {
@@ -40,8 +44,11 @@ const App = () => {
 <Route path='/Business Stragery' element={<Business/>}/>
 
 <Route path='/delete' element={<Del1/>}/>
+<Route path='deletecourse' element={<Del2/>}/>
 <Route path='/update' element={<Update1/>}/>
+<Route path='/updatecourse' element={<Update2/>}/>
 
+<Route path='/cart' element={<Cart/>}/>
 
     </Routes>
     </BrowserRouter>
