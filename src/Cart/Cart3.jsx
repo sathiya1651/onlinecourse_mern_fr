@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
 import './carts.css'
+import { useNavigate } from 'react-router-dom';
 
 const Cart3 = () => {
 
@@ -10,12 +11,21 @@ const Cart3 = () => {
 if(isEmpty)
     return <h1 className='text-center'>Cart</h1>
 
+const navigate = useNavigate();
+
+const Buy = ()=>{
+    alert("Payment received")
+    navigate('/Home')
+}
+
   return (
     <>
     <section className='py-4 container'>
         <div className='row justify-content-center'>
             <div className="col-12">
-                <h5>No of course: {totalUniqueItems} Count: {totalItems}</h5>
+                <h5>No of course: {totalUniqueItems} </h5>
+                {/* <h6>{totalItems}</h6> */}
+
                 <table className='table table-light table-hover m-0'>
                     <tbody>
                     {items.map((item,index)=>{
@@ -43,7 +53,7 @@ if(isEmpty)
             </div>
             <div className="text-center p-5 popsa ">
                 <button className='btn btn-outline-dark   ' onClick={()=>emptyCart()}>Delete All</button>
-                <button className='btn btn-outline-info '>Buy Now</button>
+                <button className='btn btn-outline-success' onClick={()=>Buy()}>Buy Now</button>
             </div>
 
         </div>

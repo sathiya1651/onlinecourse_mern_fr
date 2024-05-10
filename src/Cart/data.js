@@ -21,7 +21,7 @@ const data = {
         },
         {
             id:2,
-            img:three,
+            img:four,
             title:"Mern Stack Developer",
             desc:"",
             price:1499
@@ -35,7 +35,7 @@ const data = {
         },
         {
             id:4,
-            img:four,
+            img:three,
             title:"Cyber Security",
             desc:"",
             price:1099
